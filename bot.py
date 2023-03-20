@@ -122,7 +122,7 @@ print("O tempo estimado para a conclusão dos cadastros é de {} segundos".forma
 
 #definicoes de login
 url = input("Digite o url da Wiki:\n")
-url = "http://{}/settings/users/create".format(url)
+url = "{}/settings/users/create".format(url)
 lg_user = input('Digite seu usuário:\n')
 lg_password = gtp.getpass('Digite sua Senha:\n')
 user_role = input('Digite o cargo dos usuários:\n')
