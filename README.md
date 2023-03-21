@@ -14,6 +14,9 @@ Nesse sentido, ao rodar o código será solicitado o caminho do arquivo[^1] com 
 Uma das poucas configurações voltadas específicamente para o público brasileiro é a criação de novos usuários com linguagem padrão PT-BR. Essa configuração pode ser alterada modificando-se o código
 `driver.find_element_by_xpath('//*[@id="user-language"]/option[30]').click()`, na linha 51, pelo indíce de option correspondente ao idioma desejado. Para criação de usuários em inglês, basta a exclusão dessa linha
 
+###Atenção:
+É necessária a instalação e configuração do WebDriver para a versão do Chrome que esteja rodando na máquina que executar o código. O WebDriver pode ser encontrado <a href="https://chromedriver.chromium.org/downloads">neste site</a>. 
+
 
 [^1]: Atualmente, são aceitos arquivos de Excel. Futuramente podem ser adicionadas funções de tratamento de dados para arquivos .csv
 [^2]: Ao passar manual e nominalmente as colunas referentes a dados de Nome, Email e Senha, permite-se a criação de usuários com essas informações desprezando eventuais colunas extras no arquivo e evita-se a necessidade de formatação do arquivo xlsx para um padrão pré-determinado.
