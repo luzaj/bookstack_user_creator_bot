@@ -1,4 +1,4 @@
-# Bot de Criação de Usuário Wiki BookStack (English Description soon)
+# Bot de Criação de Usuário Wiki BookStack (English Description Below)
 
 ## Descrição - PTBR
 
@@ -21,3 +21,17 @@ Uma das poucas configurações voltadas específicamente para o público brasile
 
 [^1]: Atualmente, são aceitos arquivos de Excel. Futuramente podem ser adicionadas funções de tratamento de dados para arquivos .csv
 [^2]: Ao passar manual e nominalmente as colunas referentes a dados de Nome, Email e Senha, permite-se a criação de usuários com essas informações desprezando eventuais colunas extras no arquivo e evita-se a necessidade de formatação do arquivo xlsx para um padrão pré-determinado.
+
+## Description - EN
+
+Bot used to create users in Wiki BookStack. 
+
+The script is developed in Python, primarily using the Selenium library for web process automation and the Pandas library for understanding and processing user data originating from Excel.
+
+The code was developed to be as generic as possible so that it could be used in any Wiki instance with any user data set model. When running the code, the user will be prompted for the path of the file with access information and the necessary data columns for creating access, as well as the URL of the Wiki instance used and login data for access that will create the users (admin access required) and the role of the new users.
+
+One of the few settings specifically aimed at the Brazilian audience is the creation of new users with the default language set to PT-BR. This setting can be changed by modifying the code driver.find_element_by_xpath('//*[@id="user-language"]/option[30]').click() on line 51 with the corresponding option index for the desired language. To create users in English, simply delete that line.
+
+### Note: 
+1. It is necessary to install and configure the WebDriver for the version of Chrome running on the machine that will execute the code. The WebDriver can be found on this website.
+2. As it is a Python script and not an executable, the machine that will execute the code needs to meet the requirements described in the requirements.txt file.
