@@ -15,7 +15,8 @@ Uma das poucas configurações voltadas específicamente para o público brasile
 `driver.find_element_by_xpath('//*[@id="user-language"]/option[30]').click()`, na linha 51, pelo indíce de option correspondente ao idioma desejado. Para criação de usuários em inglês, basta a exclusão dessa linha
 
 ### Atenção:
-É necessária a instalação e configuração do WebDriver para a versão do Chrome que esteja rodando na máquina que executar o código. O WebDriver pode ser encontrado <a href="https://chromedriver.chromium.org/downloads">neste site</a>. 
+1. É necessária a instalação e configuração do WebDriver para a versão do Chrome que esteja rodando na máquina que executar o código. O WebDriver pode ser encontrado <a href="https://chromedriver.chromium.org/downloads">neste site</a>. 
+2. Por se tratar de um script Python e não um executável, é necessário que a máquina que vai executar o código atenda os requisitos descritos no arquivo requirements.txt.
 
 
 [^1]: Atualmente, são aceitos arquivos de Excel. Futuramente podem ser adicionadas funções de tratamento de dados para arquivos .csv
