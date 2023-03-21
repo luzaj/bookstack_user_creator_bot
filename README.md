@@ -24,7 +24,7 @@ Uma das poucas configurações voltadas específicamente para o público brasile
 
 ## Description - EN
 
-Bot used to create users in Wiki BookStack. 
+Bot used to create users in <a href="https://github.com/BookStackApp/BookStack">Wiki BookStack</a>.. 
 
 The script is developed in Python, primarily using the Selenium library for web process automation and the Pandas library for understanding and processing user data originating from Excel.
 
