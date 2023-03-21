@@ -33,5 +33,5 @@ The code was developed to be as generic as possible so that it could be used in 
 One of the few settings specifically aimed at the Brazilian audience is the creation of new users with the default language set to PT-BR. This setting can be changed by modifying the code driver.find_element_by_xpath('//*[@id="user-language"]/option[30]').click() on line 51 with the corresponding option index for the desired language. To create users in English, simply delete that line.
 
 ### Note: 
-1. It is necessary to install and configure the WebDriver for the Chrome Version running on the device that will execute the code. The WebDriver can be found <a href="https://chromedriver.chromium.org/downloads">on this website</a>. .
+1. It is necessary to install and configure the WebDriver according to the Google Chome version to be runed on the machine that will execute the code. The WebDriver can be found <a href="https://chromedriver.chromium.org/downloads">on this website</a>. .
 2. As it is a Python script and not an executable, the device that will execute the code needs to meet the requirements described in the requirements.txt file.
